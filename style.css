@@ -191,9 +191,7 @@ main {
   color: transparent;
   background-image: url(./images/textbg.jpg);
   background-size: cover;
-
-  --webkit-background-clip: text;
-
+  -webkit-background-clip: text;
   font-weight: 900;
 }
 
