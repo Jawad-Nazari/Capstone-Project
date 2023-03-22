@@ -1,0 +1,3 @@
+Copyright March 2023, Jawad Nazari
+
+Any person who obtains a copy of this Web Development and any related documentation files is hereby granted permission to deal in the Web Development without restriction, including without limitation the right to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Web Development, as well as the right to authorize others to do so on their behalf.
