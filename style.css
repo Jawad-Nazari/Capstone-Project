@@ -1,0 +1,669 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+html {
+  --hamburger-color: #545450;
+  --hover-text-decoration: 'none';
+  --margin-bottom-sections: 200px;
+  --margin-left-lg: 100px;
+  --scroll-behavior: smooth;
+  --black: #272a30;
+  --orange: #ec5240;
+  --grey: #d3d3d5;
+  --font-lato: 'Lato', 'san-serif';
+  --font-poppins: 'poppins';
+  --font-cocogoose: 'Signika Negative', 'san-serif';
+}
+
+body {
+  background-image: url(./images/desktopBg.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+nav {
+  z-index: 10;
+  position: relative;
+  padding: 15px 0;
+  background-color: #fff;
+}
+
+.nav-container-parnav-brand {
+  display: none;
+}
+
+.nav-ul {
+  display: none;
+  transition: width 2s;
+  list-style-type: none;
+}
+
+.responsive {
+  height: 100%;
+  width: 100%;
+}
+
+.sectionone.about {
+  height: 95vh;
+}
+
+.nav-ul.change {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: #ec5240;
+  top: 0;
+  left: 0;
+  padding: 43px;
+}
+
+.mail a {
+  font-family: var(--font-lato);
+  font-weight: bold;
+  font-size: 0.8rem;
+  color: var(--black);
+}
+
+.items li a {
+  text-decoration: none;
+  color: var(--black);
+  font-family: var(--font-lato);
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.sectionone-overlay-heroimage.about > a {
+  text-decoration: underline;
+  text-align: center;
+}
+
+.mail:hover a {
+  text-decoration: var(--hover-text-decoration);
+}
+
+.nav-ul.change > li a {
+  font-size: 25px;
+  display: block;
+  margin-bottom: 15px;
+  color: #d3d3d5;
+  text-decoration: none;
+}
+
+.ham {
+  height: 27px;
+  cursor: pointer;
+  order: -1;
+  width: 35px;
+}
+
+.ham.change {
+  margin-left: 90%;
+}
+
+.bar {
+  width: 100%;
+  height: 4.1px;
+  background-color: black;
+  margin-bottom: 8px;
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.ham.change .bar-one {
+  transform: translate(0, 12px) rotate(-45deg);
+}
+
+.ham.change .bar-two {
+  opacity: 0;
+}
+
+.ham.change .bar-three {
+  transform: translate(0, -11px) rotate(45deg);
+}
+
+.nav-ul > li > a:hover {
+  background-color: rgb(2, 3, 21);
+  color: #ec5240;
+}
+
+main {
+  margin-top: -78px;
+}
+
+.top-panel {
+  display: none;
+}
+
+.navigation {
+  background-color: #fff;
+}
+
+.hamburger {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.line {
+  display: block;
+  margin: 2px auto;
+  background-color: var(--hamburger-color);
+  width: 32px;
+  height: 6px;
+}
+
+.first-text {
+  font-family: var(--font-lato);
+  color: var(--orange);
+}
+
+.nav-logo {
+  display: none;
+}
+
+.campain-btn {
+  margin-left: 16px;
+  border: 2px solid var(--orange);
+  color: var(--orange);
+  border-radius: 0;
+}
+
+.items {
+  position: relative;
+  left: 1rem;
+  top: 8px;
+}
+
+.items li:nth-child(1) a {
+  color: var(--orange);
+}
+
+.top-section {
+  margin-bottom: var(--margin-bottom-sections);
+}
+
+.topic {
+  font-family: var(--font-cocogoose);
+  font-size: 3rem;
+  color: transparent;
+  background-image: url(./images/textbg.jpg);
+  background-size: cover;
+  -webkit-background-clip: text;
+  font-weight: 900;
+}
+
+.topic-description,
+.topic-description-about {
+  font-family: var(--font-lato);
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: var(--black);
+}
+
+.date {
+  color: var(--black);
+  font-family: var(--font-cocogoose);
+  font-weight: 800;
+}
+
+.location {
+  font-family: 'poppins', sans-serif;
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+
+.main {
+  background-color: var(--black);
+  position: relative;
+  background-image: url(./images/cross.svg);
+  background-size: 20px;
+}
+
+.main-program {
+  font-family: var(--font-lato);
+  font-weight: 500;
+  z-index: 3;
+}
+
+.baseline {
+  background-color: var(--orange);
+  width: 50px;
+  height: 1px;
+  margin: 1px auto;
+  z-index: 3;
+}
+
+.block {
+  background-color: #63687748;
+}
+
+.icon {
+  width: 28px;
+}
+
+.program {
+  font-family: var(--font-lato);
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--orange);
+}
+
+.program-description {
+  font-family: var(--font-lato);
+  font-weight: 500;
+  font-size: 0.6rem;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.people::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url(./images/cheesbg.svg);
+  background-repeat: no-repeat;
+  background-size: 100px;
+}
+
+.people-name {
+  font-family: var(--font-lato);
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.people-description {
+  font-family: var(--font-lato);
+  color: var(--orange);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.expand-description {
+  font-family: var(--font-lato);
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--black);
+}
+
+.join {
+  background-color: var(--orange);
+  outline: none;
+  border: none;
+  color: var(--grey);
+  align-items: center;
+}
+
+.join:active {
+  background-color: #f03b27;
+}
+
+.desktop-buttone {
+  display: none;
+}
+
+.more {
+  color: var(--black);
+  font-family: var(--font-lato);
+  border: 2px solid var(--grey);
+  background-color: #fff;
+  border-radius: 3px;
+}
+
+.arrow {
+  width: 12px;
+}
+
+/* The about page styles */
+
+.about-description {
+  border: 2px solid var(--grey);
+}
+
+.about-topic {
+  font-family: var(--font-cocogoose);
+  font-size: 3rem;
+  font-weight: 900;
+  color: var(--orange);
+}
+
+.logo-text {
+  font-family: var(--font-lato);
+  font-weight: 600;
+}
+
+.logo-decide {
+  font-family: var(--font-lato);
+  font-size: 0.8rem;
+}
+
+.logo-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 200px;
+}
+
+.graduates {
+  margin-top: var(--margin-top-sections);
+}
+
+.graduates-header {
+  font-family: var(--font-lato);
+  font-weight: 700;
+}
+
+.gradPhoto {
+  padding: 84px 138px;
+  background-image: url(./images/about2011.svg);
+  background-position: center;
+  background-size: contain;
+  position: relative;
+  background-repeat: no-repeat;
+}
+
+.gradPhotoes {
+  padding: 84px 138px;
+  background-image: url(./images/about2013.svg);
+  background-position: center;
+  background-size: contain;
+  position: relative;
+  background-repeat: no-repeat;
+}
+
+.year {
+  font-family: var(--font-poppins);
+  font-weight: 600;
+  color: #fff;
+}
+
+.below-year {
+  font-family: var(--font-lato);
+  color: #fff;
+}
+
+.thepartners {
+  background-color: var(--black);
+}
+
+.partner {
+  font-family: var(--font-lato);
+  font-weight: 500;
+  color: #8f8f91;
+}
+
+.companies img {
+  width: 100px;
+}
+
+.logo-end {
+  width: 160px;
+}
+
+.ende {
+  margin-left: 50px;
+}
+
+.end-text {
+  font-family: var(--font-lato);
+  font-size: 0.8rem;
+  font-weight: 600;
+  width: 50%;
+  color: #000;
+}
+
+.end {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  nav {
+    padding: 0;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    z-index: 10;
+    position: relative;
+  }
+
+  .nav-container-parnav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-container-parnav-brand {
+    width: 15%;
+    display: flex;
+  }
+
+  .nav-container-parnav-brand > a {
+    height: 72px;
+    display: block;
+    width: 196px;
+  }
+
+  .ham {
+    order: -1;
+    width: 35px;
+    height: 27px;
+    display: none;
+  }
+
+  .nav-ul {
+    display: flex;
+  }
+
+  .nav-ul > li {
+    margin-left: 16px;
+    list-style-type: none;
+  }
+
+  .items li a {
+    text-decoration: none;
+    color: var(--black);
+    font-family: var(--font-lato);
+    font-weight: 600;
+    font-size: 0.8rem;
+  }
+
+  .nav-ul > li > a {
+    color: #6a6161;
+    font-weight: 600;
+    padding: 27px 20px;
+    transition: all 0.5s;
+    height: 72px;
+    display: block;
+    text-decoration: none;
+  }
+
+  .colored {
+    color: #e47820 !important;
+  }
+
+  .parbordered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .bordered {
+    border: 5px solid #e47820;
+    display: flex;
+    align-items: center;
+    height: auto !important;
+    padding: 8px !important;
+    text-align: center;
+  }
+
+  .nav-ul > li > a:hover {
+    background-color: rgb(2, 3, 21);
+    color: #ec5240;
+  }
+
+  .top-panel {
+    background-color: var(--black);
+    height: 26px;
+    display: flex;
+    justify-content: end;
+  }
+
+  .top-text {
+    font-family: var(--font-lato);
+    font-weight: 500;
+    font-size: 0.75rem;
+  }
+
+  .navigation {
+    background-color: #fff;
+  }
+
+  .nav-logo {
+    display: block;
+    margin-left: 70px;
+    width: 240px;
+  }
+
+  .campain-btn {
+    margin-left: 200px;
+    border: 4px solid var(--orange);
+    color: var(--orange);
+    border-radius: 0;
+    font-weight: bold;
+  }
+
+  .campain-btn:hover {
+    background-color: var(--orange);
+    color: #fff;
+  }
+
+  .items {
+    position: relative;
+    left: 10rem;
+    top: 8px;
+  }
+
+  .items li:nth-child(1) a {
+    color: var(--orange);
+  }
+
+  .first-text,
+  .topic,
+  .topic-description,
+  .date,
+  .location {
+    margin-left: var(--margin-left-lg);
+  }
+
+  .topic {
+    width: 60%;
+    font-size: 3rem;
+  }
+
+  .topic-description {
+    width: 50%;
+  }
+
+  .date {
+    font-size: 1.5rem;
+  }
+
+  .block {
+    width: 160px;
+    transition: all 0.3s ease;
+  }
+
+  .block:hover {
+    transform: scale(1.05);
+  }
+
+  .program-description {
+    width: 100%;
+    text-align: center;
+  }
+
+  .join {
+    display: none;
+  }
+
+  .desktop-buttone {
+    display: block;
+    margin-top: 50px;
+  }
+
+  .desktop-button {
+    color: var(--grey);
+    font-weight: 600;
+    font-family: var(--font-lato);
+  }
+
+  .desktop-button:hover {
+    text-decoration: var(--hover-text-decoration);
+  }
+
+  .speakers {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  .partner {
+    display: block;
+  }
+
+  .end {
+    display: block;
+  }
+
+  /* About page */
+
+  .about-topic,
+  .topic-description-about {
+    text-align: center;
+    margin: 0 auto;
+    width: 50%;
+  }
+
+  .about-first {
+    display: none;
+  }
+
+  .contact-us {
+    margin: 0 auto;
+  }
+
+  .gradPhoto,
+  .gradPhotoes {
+    width: 400px;
+  }
+
+  .logo-wrapper {
+    align-items: center;
+    width: fit-content;
+  }
+
+  .card {
+    border-radius: 0;
+    z-index: -1;
+  }
+
+  .companies {
+    margin: 0 auto;
+  }
+
+  .reserved {
+    background-color: var(--black);
+    align-items: center;
+    padding: 80px;
+  }
+
+  .about-end {
+    color: var(--grey);
+  }
+}
