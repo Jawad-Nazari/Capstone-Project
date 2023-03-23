@@ -47,7 +47,7 @@
 - **[About page]**
 
 
-- [🚀 Live Demo](#live-demo)
+- [🚀 Live Demo Link](https://jawad-nazari.github.io/Capstone-Project/about.html)
  Here is the link to the live demo
 - [🚀 Link to the Loom Video](https://www.loom.com/share/329cfeb281c749a1920cb40548dba91e)
 
