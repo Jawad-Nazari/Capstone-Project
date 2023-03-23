@@ -12,12 +12,15 @@ html {
   --font-lato: 'Lato', 'san-serif';
   --font-poppins: 'poppins';
   --font-cocogoose: 'Signika Negative', 'san-serif';
+
+  overflow-x: hidden;
 }
 
 body {
   background-image: url(./images/desktopBg.png);
   background-repeat: no-repeat;
   background-size: auto;
+  overflow-x: hidden;
 }
 
 nav {
