@@ -338,7 +338,8 @@ main {
 
 .logo-decide {
   font-family: var(--font-lato);
-  font-size: 0.8rem;
+  font-size: 1rem;
+  color: #838383;
 }
 
 .logo-wrapper {

@@ -162,7 +162,7 @@ more.addEventListener('click', () => {
 
 // Function to automatically adjust the position Of the elements on breakpoint
 if (window.innerWidth >= 768) {
-  window.onload = main(4);
+  window.onload = main(6);
   mainSpeakers.style.gridTemplateColumns = '1fr 1fr';
 } else {
   window.onload = main(4);
