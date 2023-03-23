@@ -12,12 +12,15 @@ html {
   --font-lato: 'Lato', 'san-serif';
   --font-poppins: 'poppins';
   --font-cocogoose: 'Signika Negative', 'san-serif';
+
+
 }
 
 body {
   background-image: url(./images/desktopBg.png);
   background-repeat: no-repeat;
   background-size: auto;
+
 }
 
 nav {
@@ -72,7 +75,7 @@ nav {
   font-size: 1rem;
 }
 
-.sectionone-overlay-heroimage.about > a {
+.sectionone-overlay-heroimage.about>a {
   text-decoration: underline;
   text-align: center;
 }
@@ -81,7 +84,7 @@ nav {
   text-decoration: var(--hover-text-decoration);
 }
 
-.nav-ul.change > li a {
+.nav-ul.change>li a {
   font-size: 25px;
   display: block;
   margin-bottom: 15px;
@@ -120,7 +123,7 @@ nav {
   transform: translate(0, -11px) rotate(45deg);
 }
 
-.nav-ul > li > a:hover {
+.nav-ul>li>a:hover {
   background-color: rgb(2, 3, 21);
   color: #ec5240;
 }
@@ -192,6 +195,7 @@ main {
   font-size: 0.85rem;
   font-weight: 400;
   color: var(--black);
+  align-self: center;
 }
 
 .date {
@@ -396,8 +400,8 @@ main {
 }
 
 .logo-end {
-  width: 40%;
-  height: 40%;
+  width: 50%;
+  height: 50%;
 }
 
 .ende {
@@ -410,6 +414,7 @@ main {
   font-weight: 600;
   width: 50%;
   color: #000;
+  margin-top: 20px;
 }
 
 .end {
@@ -437,7 +442,7 @@ main {
     display: flex;
   }
 
-  .nav-container-parnav-brand > a {
+  .nav-container-parnav-brand>a {
     height: 72px;
     display: block;
     width: 196px;
@@ -454,7 +459,7 @@ main {
     display: flex;
   }
 
-  .nav-ul > li {
+  .nav-ul>li {
     margin-left: 16px;
     list-style-type: none;
   }
@@ -467,7 +472,7 @@ main {
     font-size: 0.8rem;
   }
 
-  .nav-ul > li > a {
+  .nav-ul>li>a {
     color: #6a6161;
     font-weight: 600;
     padding: 27px 20px;
@@ -496,7 +501,7 @@ main {
     text-align: center;
   }
 
-  .nav-ul > li > a:hover {
+  .nav-ul>li>a:hover {
     background-color: rgb(2, 3, 21);
     color: #ec5240;
   }
@@ -653,10 +658,15 @@ main {
   .reserved {
     background-color: var(--black);
     align-items: center;
-    padding: 80px;
+    padding: 70px;
   }
 
   .about-end {
     color: var(--grey);
+  }
+
+  .logo-end {
+    width: 20%;
+    height: 20%;
   }
 }
