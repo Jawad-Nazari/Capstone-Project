@@ -24,7 +24,6 @@ nav {
   z-index: 10;
   position: relative;
   padding: 15px 0;
-  background-color: #fff;
 }
 
 .nav-container-parnav-brand {
@@ -138,15 +137,6 @@ main {
   background-color: #fff;
 }
 
-.hamburger {
-  width: 50px;
-  height: 50px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
 .line {
   display: block;
   margin: 2px auto;
@@ -183,11 +173,12 @@ main {
 
 .top-section {
   margin-bottom: var(--margin-bottom-sections);
+  padding-left: 10px;
 }
 
 .topic {
   font-family: var(--font-cocogoose);
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: transparent;
   background-image: url(./images/textbg.jpg);
   background-size: cover;
@@ -327,9 +318,13 @@ main {
 
 .about-topic {
   font-family: var(--font-cocogoose);
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 900;
   color: var(--orange);
+}
+
+.logo {
+  width: 160px;
 }
 
 .logo-text {
@@ -346,10 +341,6 @@ main {
   display: flex;
   justify-content: center;
   margin: 0 auto;
-}
-
-.logo {
-  width: 100%;
 }
 
 .graduates {
@@ -405,7 +396,8 @@ main {
 }
 
 .logo-end {
-  width: 20%;
+  width: 40%;
+  height: 40%;
 }
 
 .ende {
@@ -431,6 +423,7 @@ main {
     overflow-y: hidden;
     z-index: 10;
     position: relative;
+    background-color: #fff;
   }
 
   .nav-container-parnav {
